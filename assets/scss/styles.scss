@@ -12,3 +12,9 @@ html {
         padding: 0;
     }
 }
+
+#social__proff {
+    background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+}
