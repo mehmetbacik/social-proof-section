@@ -7,7 +7,7 @@ html {
     font-size: $theme__size;
     body {
         @include font;
-        height: 100%;
+        max-height: 100vh;
         margin: 0;
         padding: 0;
     }
@@ -17,4 +17,22 @@ html {
     background-image: url(../img/bg-pattern-top-desktop.svg), url(../img/bg-pattern-bottom-desktop.svg);
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
+    main {
+        .content {
+            @include d-flex;
+            justify-content: space-between;
+            margin-top: 100px;
+            margin-bottom: 40px;
+            .text {
+                
+            }
+            .stars {
+                
+            }
+        }
+        .customer {
+            @include d-flex;
+            margin-top: 40px;
+        }
+    }
 }

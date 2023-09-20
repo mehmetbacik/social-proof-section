@@ -10,7 +10,6 @@ $white: hsl(0, 0%, 100%);
 @mixin d-flex {
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 @mixin font {
