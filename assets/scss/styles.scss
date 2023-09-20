@@ -18,21 +18,101 @@ html {
     background-position: left top, right bottom;
     background-repeat: no-repeat, no-repeat;
     main {
-        .content {
+        .main__content {
             @include d-flex;
             justify-content: space-between;
             margin-top: 100px;
             margin-bottom: 40px;
             .text {
-                
+                .headline {
+                    font-size: 45px;
+                    color: $very__dark__magenta;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-align: left;
+                }
+                .explanation {
+                    margin-top: 16px;
+                    color: $dark__grayish__magenta;
+                    font-weight: 500;
+                }
             }
             .stars {
-                
+                .content {
+                    color: $very__dark__magenta;
+                    font-weight: 700;
+                    background-color: $light__grayish__magenta;
+                    border-radius: 6px;
+                    padding: 10px 20px;
+                    margin-bottom: 10px
+                }
             }
         }
-        .customer {
+        .main__customer {
             @include d-flex;
             margin-top: 40px;
+            gap: 25px;
+            .item {
+                background-color: $very__dark__magenta;
+                border-radius: 6px;
+                padding: 30px 20px;
+            }
+        }
+    }
+}
+
+@media (min-width: 576px) {
+    br {
+        &.large {
+            display: none;
+        }
+        &.medium {
+            display: none;
+        }
+        &.small {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    br {
+        &.large {
+            display: none;
+        }
+        &.medium {
+            display: block;
+        }
+        &.small {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    br {
+        &.large {
+            display: block;
+        }
+        &.medium {
+            display: none;
+        }
+        &.small {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    br {
+        &.large {
+            display: block;
+        }
+        &.medium {
+            display: none;
+        }
+        &.small {
+            display: none;
         }
     }
 }
