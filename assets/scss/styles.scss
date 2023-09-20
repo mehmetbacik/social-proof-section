@@ -38,13 +38,38 @@ html {
                 }
             }
             .stars {
+                padding-right: 90px;
                 .content {
-                    color: $very__dark__magenta;
-                    font-weight: 700;
+                    @include d-flex;
+                    gap: 25px;
                     background-color: $light__grayish__magenta;
                     border-radius: 6px;
-                    padding: 10px 20px;
-                    margin-bottom: 10px
+                    line-height: normal;
+                    padding: 15px 30px;
+                    margin-bottom: 15px;
+                    p {
+                        color: $very__dark__magenta;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+                    .rate {
+                        .star {
+                            margin-left: 1px;
+                            margin-right: 1px;
+                            &::before {
+                                content: url(/assets/img/icon-star.svg);
+                            }
+                        }
+                    }
+                    &:nth-child(1) {
+                        transform: translateX(0px);
+                    }
+                    &:nth-child(2) {
+                        transform: translateX(45px);
+                    }
+                    &:nth-child(3) {
+                        transform: translateX(90px);
+                    }
                 }
             }
         }
