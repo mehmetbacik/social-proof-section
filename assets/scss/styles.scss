@@ -77,10 +77,48 @@ html {
             @include d-flex;
             margin-top: 40px;
             gap: 25px;
+            padding-bottom: 40px;
             .item {
                 background-color: $very__dark__magenta;
                 border-radius: 6px;
-                padding: 30px 20px;
+                padding: 30px 30px;
+                .person {
+                    @include d-flex;
+                    gap: 20px;
+                    margin-bottom: 20px;
+                    .image {
+                        img {
+                            border-radius: 100%;
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                    .detail {
+                        span {
+                            color: $white;
+                            font-weight: 700;
+                        }
+                        p {
+                            color: $soft__pink;
+                            font-weight: 500;
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+                .comment {
+                    p {
+                        color: $white;
+                    }
+                }
+                &:nth-child(1) {
+                    transform: translateY(0px);
+                }
+                &:nth-child(2) {
+                    transform: translateY(20px);
+                }
+                &:nth-child(3) {
+                    transform: translateY(40px);
+                }
             }
         }
     }
