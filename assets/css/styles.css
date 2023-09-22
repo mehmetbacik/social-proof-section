@@ -184,6 +184,9 @@ html body {
   }
 }
 @media (max-width: 767px) {
+  #social__proff {
+    background-image: url(../img/bg-pattern-top-mobile.svg), url(../img/bg-pattern-bottom-mobile.svg);
+  }
   #social__proff main .main__content {
     flex-direction: column;
     gap: 25px;
@@ -192,6 +195,7 @@ html body {
     text-align: center;
   }
   #social__proff main .main__content .text .headline {
+    font-size: 40px;
     text-align: center;
   }
   #social__proff main .main__content .stars {
