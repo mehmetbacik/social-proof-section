@@ -212,6 +212,53 @@ html {
 }
 
 @media (max-width: 767px) {
+    #social__proff {
+        main {
+            .main__content {
+                flex-direction: column;
+                gap: 25px;
+                .text {
+                    text-align: center;
+                    .headline {
+                        text-align: center;
+                    }
+                }
+                .stars {
+                    padding-right: 0px;
+                    width: 100%;
+                    .content {
+                        flex-direction: column;
+                        gap: 10px;
+                        &:nth-child(1) {
+                            transform: translateX(0px);
+                        }
+                        &:nth-child(2) {
+                            transform: translateX(0px);
+                        }
+                        &:nth-child(3) {
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+            }
+            .main__customer {
+                flex-direction: column;
+                gap: 15px;
+                .item {
+                    &:nth-child(1) {
+                        transform: translateY(0px);
+                    }
+                    &:nth-child(2) {
+                        transform: translateY(0px);
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(0px);
+                    }
+                }
+            }
+        }
+    }
+
     br {
         &.large {
             display: none;
