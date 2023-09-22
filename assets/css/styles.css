@@ -116,29 +116,7 @@ html body {
   transform: translateY(40px);
 }
 
-@media (min-width: 576px) {
-  br.large {
-    display: none;
-  }
-  br.medium {
-    display: none;
-  }
-  br.small {
-    display: block;
-  }
-}
-@media (min-width: 768px) {
-  br.large {
-    display: none;
-  }
-  br.medium {
-    display: block;
-  }
-  br.small {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   br.large {
     display: block;
   }
@@ -149,7 +127,7 @@ html body {
     display: none;
   }
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   br.large {
     display: block;
   }
@@ -158,5 +136,61 @@ html body {
   }
   br.small {
     display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #social__proff main .main__content .text {
+    flex-basis: 45%;
+  }
+  #social__proff main .main__content .text .headline {
+    font-size: 40px;
+  }
+  #social__proff main .main__content .text .explanation {
+    margin-bottom: 0px;
+  }
+  #social__proff main .main__content .stars {
+    flex-basis: 55%;
+    padding-right: 0px;
+  }
+  #social__proff main .main__content .stars .content {
+    padding: 15px 15px;
+  }
+  #social__proff main .main__content .stars .content:nth-child(1) {
+    transform: translateX(0px);
+  }
+  #social__proff main .main__content .stars .content:nth-child(2) {
+    transform: translateX(0px);
+  }
+  #social__proff main .main__content .stars .content:nth-child(3) {
+    transform: translateX(0px);
+  }
+  #social__proff main .main__customer .item:nth-child(1) {
+    transform: translateY(0px);
+  }
+  #social__proff main .main__customer .item:nth-child(2) {
+    transform: translateY(0px);
+  }
+  #social__proff main .main__customer .item:nth-child(3) {
+    transform: translateY(0px);
+  }
+  br.large {
+    display: none;
+  }
+  br.medium {
+    display: block;
+  }
+  br.small {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  br.large {
+    display: none;
+  }
+  br.medium {
+    display: none;
+  }
+  br.small {
+    display: block;
   }
 }/*# sourceMappingURL=styles.css.map */
